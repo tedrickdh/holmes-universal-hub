@@ -4,162 +4,109 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Holmes Universal Solutions — Houston, Texas</title>
-<meta name="description" content="Holmes Universal Solutions is the umbrella company for Tedrick Holmes' publishing, web, education, and community ventures — based in Houston, Texas.">
-<style>
-  :root{
-    --navy:#0d2238; --navy2:#123354; --gold:#c9a227; --ink:#18242f; --muted:#5d6d7c;
-    --bg:#ffffff; --soft:#f3f6f9; --line:#e2e9ef; --radius:16px;
-  }
-  *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
-  a{color:inherit}
-  .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
-  /* Header */
-  header{position:sticky;top:0;z-index:20;background:rgba(13,34,56,.97);color:#fff}
-  .nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 0}
-  .brand{font-weight:800;letter-spacing:.02em;text-decoration:none;font-size:1.02rem}
-  .brand span{color:var(--gold)}
-  nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
-  nav a{text-decoration:none;color:#dbe6f1;font-size:.95rem}
-  nav a:hover{color:#fff}
-  @media(max-width:640px){nav ul{gap:14px} nav a{font-size:.88rem}}
-  /* Hero */
-  .hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 62%,#1a4a73 100%);color:#fff;padding:84px 0 76px}
-  .hero .kicker{color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:.8rem;margin:0 0 14px}
-  .hero h1{font-size:clamp(2.1rem,5vw,3.4rem);line-height:1.08;margin:0 0 18px;max-width:720px}
-  .hero p{color:#cfdeeb;font-size:1.13rem;max-width:640px;margin:0 0 28px}
-  .btns{display:flex;flex-wrap:wrap;gap:12px}
-  .btn{display:inline-block;padding:12px 22px;border-radius:999px;text-decoration:none;font-weight:700;font-size:.98rem}
-  .btn-gold{background:var(--gold);color:#1c1503}
-  .btn-ghost{border:1px solid #7fa0bd;color:#fff}
-  /* Sections */
-  section{padding:68px 0}
-  section.soft{background:var(--soft)}
-  .eyebrow{color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:.78rem;margin:0 0 8px}
-  h2{font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.2;margin:0 0 12px}
-  .lead{color:var(--muted);max-width:680px;margin:0 0 34px;font-size:1.05rem}
-  /* Cards */
-  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-  @media(max-width:880px){.grid{grid-template-columns:1fr}}
-  .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:0 6px 22px rgba(13,34,56,.06);display:flex;flex-direction:column}
-  .card .tag{color:var(--gold);font-weight:700;font-size:.76rem;text-transform:uppercase;letter-spacing:.1em;margin:0 0 8px}
-  .card h3{margin:0 0 8px;font-size:1.22rem}
-  .card p{color:var(--muted);margin:0 0 18px;flex:1}
-  .card a{font-weight:700;color:var(--navy2);text-decoration:none}
-  .card a:hover{text-decoration:underline}
-  /* Areas */
-  .areas{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-  @media(max-width:880px){.areas{grid-template-columns:1fr}}
-  .area{border-left:4px solid var(--gold);background:#fff;border-radius:0 12px 12px 0;padding:20px 22px;box-shadow:0 4px 16px rgba(13,34,56,.05)}
-  .area h3{margin:0 0 6px;font-size:1.08rem}
-  .area p{color:var(--muted);margin:0}
-  /* About */
-  .about{display:grid;grid-template-columns:1.2fr .8fr;gap:34px;align-items:start}
-  @media(max-width:880px){.about{grid-template-columns:1fr}}
-  .facts{background:var(--navy);color:#dbe6f1;border-radius:var(--radius);padding:26px}
-  .facts h3{color:#fff;margin:0 0 14px}
-  .facts ul{margin:0;padding-left:18px}
-  .facts li{margin-bottom:8px}
-  /* Footer */
-  footer{background:var(--navy);color:#aebfd0;padding:38px 0;font-size:.94rem}
-  footer .wrap{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
-  footer strong{color:#fff}
-</style>
+<meta name="description" content="Holmes Universal Solutions is the Houston umbrella company for Tedrick Holmes' publishing, photography, web, and education ventures — one home at holmesuniversal.com.">
+<link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 
-<header>
+<header class="site-header">
   <div class="wrap nav">
-    <a class="brand" href="#top">HOLMES <span>UNIVERSAL</span> SOLUTIONS</a>
-    <nav>
-      <ul>
-        <li><a href="#ventures">Ventures</a></li>
-        <li><a href="#work">What We Do</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
-    </nav>
+    <a class="brand" href="/"><span class="mono">HU</span><span class="name">HOLMES UNIVERSAL<small>SOLUTIONS &middot; HOUSTON</small></span></a>
+    <nav><ul>
+      <li><a href="/" class="active">Home</a></li>
+      <li><a href="/publishing/">Publishing</a></li>
+      <li><a href="/web/">Web Solutions</a></li>
+      <li><a href="/readypic/">ReadyPic</a></li>
+      <li><a href="#about">About</a></li>
+    </ul></nav>
   </div>
 </header>
 
-<div class="hero" id="top">
-  <div class="wrap">
-    <p class="kicker">Houston, Texas</p>
-    <h1>One company. Every venture, under one roof.</h1>
-    <p>Holmes Universal Solutions is the umbrella home for Tedrick Holmes' publishing, technology, education, and community work. Instead of a new address for every project, everything we build lives here — at holmesuniversal.com.</p>
+<div class="hero">
+  <img class="bg" src="/assets/hero-houston.webp" alt="Downtown Houston skyline at dusk">
+  <div class="shade"></div>
+  <div class="wrap inner">
+    <p class="kicker">Holmes Universal Solutions &middot; Est. Houston, Texas</p>
+    <h1>One company.<br>Every venture, under one roof.</h1>
+    <p>Books, photography, websites, and learning tools — built by one founder, gathered in one place. No new domain for every idea. Just holmesuniversal.com, and room to grow.</p>
     <div class="btns">
       <a class="btn btn-gold" href="#ventures">Explore the ventures</a>
-      <a class="btn btn-ghost" href="#about">Meet the founder</a>
+      <a class="btn btn-line" href="#about">About the founder</a>
     </div>
+  </div>
+</div>
+
+<div class="strip">
+  <div class="wrap grid">
+    <div><strong>3</strong><span>ventures live today</span></div>
+    <div><strong>8</strong><span>books published &amp; in progress</span></div>
+    <div><strong>1</strong><span>address for everything — this one</span></div>
+    <div><strong>HOU</strong><span>built in Houston, Texas</span></div>
   </div>
 </div>
 
 <section id="ventures">
   <div class="wrap">
-    <p class="eyebrow">Our Ventures</p>
-    <h2>The projects that live here</h2>
-    <p class="lead">Each venture keeps its own identity — the hub simply gives them one front door. Ventures with their own established domains stay on those domains; the ones below are connected here.</p>
-    <div class="grid">
-      <article class="card">
-        <p class="tag">Publishing</p>
-        <h3>Tedrick Holmes, Author</h3>
-        <p>Books rooted in history, family, power, and legacy — including the published novel <em>From Kitty Hawk</em> and works in progress such as <em>The Inheritance Protocol</em> and <em>The Unbroken</em>.</p>
-        <a href="https://tedrickholmes.com">Visit tedrickholmes.com &rarr;</a>
-      </article>
-      <article class="card">
-        <p class="tag">Photography &amp; Images</p>
+    <p class="eyebrow">The Ventures</p>
+    <h2>Three front doors, one house</h2>
+    <p class="lead">Each venture keeps its own name and craft. The hub gives them a shared home — and gives you one place to find all of it.</p>
+
+    <div class="venture">
+      <div class="media"><img src="/assets/books-cover.png" alt="Tedrick Holmes book covers artwork — From Kitty Hawk, The Inheritance Protocol, and Our Shades of Black History"></div>
+      <div>
+        <h3>Books &amp; Publishing</h3>
+        <p class="domain">tedrickholmes.com &middot; books.holmesuniversal.com</p>
+        <p>Fiction and nonfiction rooted in history, family, power, and legacy. The published novel <em>From Kitty Hawk</em> follows Malcolm through a Houston apartment community; <em>The Inheritance Protocol</em> and <em>The Unbroken</em> are on the way.</p>
+        <a class="btn btn-navy" href="/publishing/">Browse the books</a>
+      </div>
+    </div>
+
+    <div class="venture reverse">
+      <div class="media"><img src="/assets/readypic.webp" alt="A photographer shooting on a tree-lined Houston neighborhood street"></div>
+      <div>
         <h3>ReadyPic</h3>
-        <p>A photography and image platform built to make great pictures easier to find, organize, and share — one of the digital products developed under the Holmes Universal umbrella.</p>
-        <a href="https://readypic.org">Visit readypic.org &rarr;</a>
-      </article>
-      <article class="card">
-        <p class="tag">Web Services</p>
+        <p class="domain">readypic.org &middot; readypic.holmesuniversal.com</p>
+        <p>Photography is how a lot of this started — family, neighborhoods, moments that deserve to be kept well. ReadyPic is the photography and image venture built to make pictures easier to capture, organize, and share.</p>
+        <a class="btn btn-navy" href="/readypic/">See ReadyPic</a>
+      </div>
+    </div>
+
+    <div class="venture">
+      <div class="media"><img src="/assets/web.webp" alt="A small business owner reviewing her new website with a designer"></div>
+      <div>
         <h3>Holmes Web Solutions</h3>
-        <p>Straightforward websites for small businesses and organizations — Starter and Professional builds, with ongoing Website Care so owners never have to touch the tech.</p>
-        <a href="https://holmes-web-solutions.tedrickdh.workers.dev">Visit Holmes Web Solutions &rarr;</a>
-      </article>
+        <p class="domain">web.holmesuniversal.com</p>
+        <p>Websites for small businesses and organizations, without the agency runaround: a clear Starter or Professional build, and Website Care after launch so you never have to touch the tech. Honest pricing, published up front.</p>
+        <a class="btn btn-navy" href="/web/">Start a website project</a>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="soft" id="work">
+<div class="manifesto">
   <div class="wrap">
-    <p class="eyebrow">What We Do</p>
-    <h2>Built in Houston, across three lanes</h2>
-    <p class="lead">Publishing, digital products, and education have always been one body of work. Holmes Universal Solutions is where they meet.</p>
-    <div class="areas">
-      <div class="area">
-        <h3>Books &amp; Publishing</h3>
-        <p>Fiction and nonfiction through Holmes Publishing, from manuscript to printed book — plus the AI-assisted tools we're building to help independent authors publish well.</p>
-      </div>
-      <div class="area">
-        <h3>Web &amp; Digital Products</h3>
-        <p>Websites, apps, and learning tools — including LessonForge, BehaviorBridge, Science Quest, and Au-Some Voice AAC — prototyped and launched under one subdomain system.</p>
-      </div>
-      <div class="area">
-        <h3>Education &amp; Community</h3>
-        <p>A career in the classroom and school leadership, family and neighborhood history work in Houston's Kashmere Gardens and Haverstock communities, and projects still to come, like Houston L.E.A.D. Preparatory Academy.</p>
-      </div>
-    </div>
+    <blockquote>&ldquo;When a new project starts, it doesn't get a whole new house across town. It gets a room here.&rdquo;</blockquote>
+    <p>The idea behind Holmes Universal Solutions</p>
   </div>
-</section>
+</div>
 
 <section id="about">
-  <div class="wrap about">
+  <div class="wrap two">
     <div>
       <p class="eyebrow">About</p>
-      <h2>About the founder</h2>
-      <p>Tedrick Holmes is a Houston educator, author, and builder. He holds a Master of Education, teaches 7th-grade science in Aldine ISD, and serves as Chief Operating Officer of an ABA services practice — while writing books and building the digital projects gathered on this site.</p>
-      <p>The idea behind Holmes Universal Solutions is simple: one home, honestly organized. When a new project starts, it gets a room here — a page or a subdomain at holmesuniversal.com — not a whole new house across town.</p>
+      <h2>The founder</h2>
+      <p>Tedrick Holmes is a Houston educator, author, and builder. He holds a Master of Education, teaches 7th-grade science in Aldine ISD, and serves as Chief Operating Officer of an ABA services practice — while writing books and building the digital projects gathered here.</p>
+      <p>The work looks varied from the outside. From the inside it is one thread: teaching, storytelling, and building useful things for families and neighborhoods — including the family and community history of Houston's Kashmere Gardens and Haverstock, and education projects still ahead, like Houston L.E.A.D. Preparatory Academy.</p>
+      <p>More ventures in development under this roof include the learning tools LessonForge, BehaviorBridge, Science Quest, and Au-Some Voice AAC, and the OMNIX personal AI project. As each one is ready, it will appear here — at its own subdomain, under this same domain.</p>
     </div>
     <aside class="facts">
-      <h3>At a glance</h3>
+      <h3 class="serif">At a glance</h3>
       <ul>
-        <li>Based in Houston, Texas</li>
-        <li>Founder: Tedrick Holmes, M.Ed.</li>
-        <li>Home on the web: holmesuniversal.com</li>
-        <li>Also: holmesuniversalsolutions.com</li>
-        <li>Ventures: publishing, photography, web services, education technology, community history</li>
+        <li><strong>Founder:</strong> Tedrick Holmes, M.Ed.</li>
+        <li><strong>Home:</strong> Houston, Texas</li>
+        <li><strong>This site:</strong> holmesuniversal.com</li>
+        <li><strong>Also ours:</strong> holmesuniversalsolutions.com (redirects here)</li>
+        <li><strong>Lanes:</strong> publishing &middot; photography &middot; web &middot; education technology &middot; community history</li>
       </ul>
     </aside>
   </div>
@@ -167,8 +114,32 @@
 
 <footer>
   <div class="wrap">
-    <div><strong>Holmes Universal Solutions</strong> &middot; Houston, Texas</div>
-    <div>books.holmesuniversal.com &middot; readypic.holmesuniversal.com &middot; web.holmesuniversal.com</div>
+    <div class="cols">
+      <div>
+        <h4>Holmes Universal Solutions</h4>
+        <p>The umbrella company for Tedrick Holmes' ventures.<br>Houston, Texas.</p>
+      </div>
+      <div>
+        <h4>Ventures</h4>
+        <ul>
+          <li><a href="/publishing/">Books &amp; Publishing</a></li>
+          <li><a href="/readypic/">ReadyPic</a></li>
+          <li><a href="/web/">Holmes Web Solutions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Short addresses</h4>
+        <ul>
+          <li>books.holmesuniversal.com</li>
+          <li>readypic.holmesuniversal.com</li>
+          <li>web.holmesuniversal.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="fine">
+      <span>&copy; Holmes Universal Solutions</span>
+      <span>holmesuniversal.com</span>
+    </div>
   </div>
 </footer>
 
