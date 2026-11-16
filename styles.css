@@ -58,7 +58,8 @@ h2{font-size:clamp(1.6rem,3.2vw,2.3rem);line-height:1.18;margin:0 0 14px;font-we
 .venture:last-child{margin-bottom:0}
 .venture.reverse .media{order:2}
 @media(max-width:860px){.venture{grid-template-columns:1fr}.venture.reverse .media{order:0}}
-.venture .media img{border-radius:8px;box-shadow:0 18px 44px rgba(20,24,29,.12);aspect-ratio:4/3;object-fit:cover;width:100%}
+.venture .media{display:flex;align-items:center;justify-content:center;min-width:0}
+.venture .media img{border-radius:8px;box-shadow:0 18px 44px rgba(20,24,29,.12);width:100%;height:auto;max-height:440px;object-fit:contain;background:var(--paper)}
 .venture h3{font-size:1.7rem;margin:0 0 6px}
 .venture .domain{color:#2456e6;font-weight:700;font-size:.9rem;letter-spacing:.04em;margin:0 0 12px}
 .venture p{color:var(--muted);margin:0 0 20px}
